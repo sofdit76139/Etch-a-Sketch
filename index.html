@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+    <body>
+        <div id="container">
+            <div id="page-title">
+                <h1>Etch-a-Sketch</h1>
+            </div>
+            <div id="content-container">
+                <div id="reset-button-container" >
+                    <div id="grid-input-from-user">
+                        <div id="user-instructions">
+                            <p>Please enter a number between 16 and 64 and click the button ("Change the grid") or hit "Enter". The grid will adjust.</p>
+                            <p>Click "RESET THE GRID" to start over.</p>
+                        </div>
+                        <!-- change the grid -->
+                        <div id="user-action">
+                            <div id="grid-number">
+                                <input type="text" placeholder="Please enter a number" id="user-input-field">
+                            </div>
+                            <div id="grid-number-button">
+                                <button type="button" id="change-grid">
+                                    Change the grid
+                                </button>
+                            </div>
+                            <div id="form-reset-button">
+                                <button type="button" id="reset-button">
+                                    RESET THE GRID
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="the-grid" >
+                    <div id="grid-container">
+                    </div>
+                </div>
+                <div id="selector-button-container">
+                    <div id="button-instructions">
+                        Please click a button to change the color of the fill.
+                    </div>
+                    <div id="all-buttons">
+                        <button id="random">
+                            RANDOM
+                        </button>
+                        <button id="black">
+                            BLACK
+                        </button>
+                        <button id="red">
+                            RED
+                        </button>
+                        <button id="blue">
+                            BLUE
+                        </button>
+                        <button id="yellow">
+                            YELLOW
+                        </button>
+                        <button id="green">
+                            GREEN
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>Part of "The Odin Project" curriculum.</p>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/script.js" async></script>
+    </body>
+</html>

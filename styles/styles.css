@@ -1,0 +1,131 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+#page-title h1 {
+    text-align: center;
+}
+#content-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+#reset-button-container {
+    display: flex;
+    flex-flow: column wrap;
+}
+#user-action {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#user-instructions {
+    padding: 2%;
+    font-size: 1.1em;
+}
+#grid-container{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 125px);
+    grid-template-rows: repeat(4, 125px);
+    justify-items: stretch;
+    align-items: stretch;
+    max-width: 500px;
+    border: 2px solid #333;
+}
+#selector-button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+#button-instructions {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    place-self: center;
+    font-size: 1.2em;
+}
+#all-buttons{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    margin: auto;
+}
+button {
+    display: inline-block;
+    padding: 0.5em 1.2em;
+    margin: 0.3em 0.3em 0.3em 0.3em;
+    border-radius: 4px;
+    border: 0.5px solid #999;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.2s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+#black {
+    background-color: #000;
+    color: #FFF;
+}
+#black:hover{
+    background-color: white;
+    border: 1px solid #000;
+    color: #000;
+}
+#red {
+    background-color: #FF0000;
+    color: #FFF;
+}
+#red:hover{
+    background-color: white;
+    border: 1px solid #FF0000;
+    color: #FF0000;
+}
+#blue {
+    background-color: #0000FF;
+    color: #FFF;
+}
+#blue:hover{
+    background-color: white;
+    border: 1px solid #0000FF;
+    color: #0000FF;
+}
+#yellow {
+    background-color: #FFFF00;
+    color: #333;
+}
+#yellow:hover{
+    background-color: white;
+    border: 1px solid #FFFF00;
+    color: #FFFF00;
+}
+#green {
+    background-color: #00FF00;
+    color: #333;
+}
+#green:hover{
+    background-color: white;
+    border: 1px solid #00FF00;
+    color: #00FF00;
+}
+#random {
+    background: repeating-linear-gradient(
+        180deg,
+        #FF0000,
+        #00FF00 20px,
+        #FFFF00 20px,
+        #0000FF
+    );
+    color: #FFF;
+}
+#random:hover{
+    background: white;
+    border: 1px solid #333;
+    color: #333;
+}
+.grid-cell-class {
+    background-color: #FFF;
+    border: 0.3px dashed #CCC;
+}
